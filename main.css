@@ -1,0 +1,21 @@
+div {
+    width: 50px;
+    height: 50px;
+    margin: 350px 0 0;
+    background-color: red;
+    border-radius: 30%;
+    position: relative;
+    animation-name: square;
+    animation-duration: 19s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes square {
+    0%   {background-color:red; left:-10px; top:0px;}
+    25%  {background-color:yellow; left:360px; top:0px;}
+    50%  {background-color:blue; left:720px; top:0px; }
+    75%  {background-color:green; left:1080px; top:0px;}
+    100% {background-color:red; left:1428px; top:0px; transform: rotate(3000deg);}
+  }
